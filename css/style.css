@@ -38,6 +38,9 @@
 .mt-15 {
   margin: 15% 0% 0%;
 }
+.mtb-2 {
+  margin: 2% 0%;
+}
 .mtb-3 {
   margin: 3% 0%;
 }
@@ -190,6 +193,9 @@
 .bg-green {
   background: #7db94d;
 }
+.bg-black {
+  background: #000000;
+}
 /* text colour */
 .txt-white {
   color: #ffffff;
@@ -200,7 +206,10 @@
 .txt-green {
   color: #7db94d;
 }
-
+/* opacity */
+.opa-3 {
+  opacity: 0.3;
+}
 /* border radius */
 .br-1 {
   border-radius: 1%;
@@ -230,7 +239,7 @@
   padding: 3% 2%;
 }
 .banner-image {
-  padding: 10% 8% 9% 12%;
+  padding: 7% 8% 7% 12%;
 }
 /* banner section*/
 .get-your-visa {
@@ -366,30 +375,6 @@ p {
   color: #000000;
   text-decoration: none;
 }
-/*.owl-prev {
-  position: absolute;
-  z-index: 10;
-  display: inline-block;
-  left: -104px;
-  cursor: pointer;
-  font-size: 0.1px;
-  top: 37%;
-  width: 95px;
-  height: 140px;
-  background: #fff url(https://goo.gl/kLnzFJ)no-repeat;
-}
-.owl-next {
-  position: absolute;
-  z-index: 10;
-  display: inline-block;
-  right: -51px;
-  cursor: pointer;
-  font-size: 0.1px;
-  top: 37%;
-  width: 45px;
-  height: 140px;
-  background: #fff url(https://goo.gl/ipLMit)no-repeat center;
-}*/
 .menu a {
   color: #ffffff !important;
   font-size: 14px;
@@ -405,14 +390,12 @@ p {
   width: 100%;
   font-family: 'Raleway', sans-serif;
 }
-
 .img_text h5 {
   font-size: 23px;
   color: #fff;
   line-height: 1;
   padding: 0 0 4px 0px;
 }
-
 .img_text p {
   font-size: 12px;
   padding: 0px 10px;
@@ -423,7 +406,6 @@ p {
   font-family: 'Raleway', sans-serif;
   text-transform: capitalize;
 }
-
 .img_wrp:hover img {
   filter: gray;
   -webkit-filter: grayscale(1);
@@ -448,10 +430,171 @@ p {
   opacity: 1;
 }
 .owl-carousel .owl-item img {
-  border-radius: 3%;
   display: block;
   width: 100%;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d
   height: 351px;
+}
+.owl-prev {
+  background: #000000;
+  opacity: 0.3;
+  padding: 2% 2%;
+  border-radius: 51%;
+  width: 34px;
+}
+.owl-next {
+  background: #000000;
+  opacity: 0.3;
+  padding: 2% 2%;
+  border-radius: 51%;
+  width: 34px;
+  margin: -9% 9%;
+}
+.ser {
+  box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15);
+  height: 112px;
+  width: 106px;
+  text-align: center;
+  margin: 3% 2%;
+  font-size: 12px;
+  padding: 2% 0% 0%;
+  border-radius: 2%;
+}
+.lab {
+  height: 100px;
+  margin: 3% 7%;
+  font-weight: 600;
+}
+input[type=checkbox] {
+    display: none;
+}
+label {
+  height: inherit;
+}
+input:checked + .ch:before {
+  content: "\2713 ";
+  background: #7db94d;
+  border-radius: 50%;
+  color: #ffffff;
+  padding: 2% 3%;
+  margin: 0% 0% 0% 68%;
+}
+.check {
+  visibility: hidden;
+}
+input:checked + .ser .check {
+    visibility: visible;
+}
+input.checkbox:checked + .ser:before {
+    content: "";
+}
+
+.process-block {
+   box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15);
+  height: 112px;
+  width: 106px;
+  text-align: center;
+  margin: 10% 2%;
+  font-size: 12px;
+  padding: 2% 0% 0%;
+  border-radius: 2%;
+}
+.line-top {
+  width: 153px;
+  height:60px;
+  z-index: -1;
+  background: transparent;
+  border: none;
+  border-top: dashed 2px #bfb7a8;
+  padding: 28px 0px;
+  border-radius: 50%;
+  margin: 24% 98% 0;
+}
+.line-bottom {
+  width: 153px;
+  height: 60px;
+  z-index: -1;
+  background: transparent;
+  border: none;
+  border-bottom: dashed 2px #bfb7a8;
+  padding: 40px 40px;
+  border-radius: 0 0 50% 50%;
+  margin: 0px 105px;
+}
+.card {
+  margin: 1% 2%;
+  box-shadow: 0 1px 3px 1px rgba(60,64,67,0.15);
+  border: none;
+  width: 87%;
+}
+.owl-testimonials .owl-wrapper {
+  margin-left: 8%;
+}
+.testimonial-body .fa-quote-left {
+  color: #eee;
+  font-size: 40px;
+  margin: 10% 40%;
+}
+.testimonial-body p {
+  margin: 2% 13%;
+}
+.testimonial-img {
+  min-width: 50px;
+  min-height: 50px;
+  width: 0%;
+  border-radius: 50%;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.testimonial-content {
+  margin: 20% 9% 10%;
+}
+.testimonial-own {
+  margin: -20% 0% 0% 17%;
+}
+.review-image {
+  padding: 15%;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+@media(max-width: 1199px){
+  .line-top{
+    width: 68px;
+    height: 78px;
+    border: none;
+    border-left: dashed 2px #bfb7a8;
+    padding: 28px 0px;
+    margin: 94% 30% 0;
+  }
+  .line-bottom{
+    width: 68px;
+    height: 71px;
+    border: none;
+    border-right: dashed 2px #bfb7a8;
+    padding: 28px 0px;
+    margin: 94% -11% 0;
+  }
+  .travel-banner-content {
+    padding: 3% 27% 0% 6%;
+  }
+  .service-steps {
+    margin: 4% 12%;
+  }
+  .banner-image {
+    padding: 24% 8% 22% 12%;
+  }
+  .blog-image {
+    margin: 6% 4%;
+  }
+  .owl-next {
+    margin: -12% 14%;
+    padding: 2% 4%;
+  }
 }

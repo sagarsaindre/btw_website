@@ -24,11 +24,11 @@ $(document).ready(function(){
           nav: true,
           navClass: ['owl-prev', 'owl-next'],
           responsiveClass: true,
-          onChange: function (elem) {
-      var current = this.currentItem;
-      var src = elem.find(".owl-item").eq(current).find("img").attr('src');
-      console.log('Image current is ' + src);
-    },
+          navigation:true,
+          navigationText: [
+             "<i class='fa fa-chevron-left'></i>",
+             "<i class='fa fa-chevron-right'></i>"
+          ],
           responsive: {
             0: {
               items: 2,
@@ -65,9 +65,13 @@ $(document).ready(function(){
       $(document).ready(function(){
          $('#owl-testimonials').owlCarousel({
             loop: true,
-            margin: 50,
-            items: 3,
+            margin: 100,
+            items: 2,
+            autoPlay: true,
             responsiveClass: true,
+            autoplayTimeout: 0,
+            autoplaySpeed: 30000,
+            autoplayHoverPause: false,
             responsive: {
                 0: {
                     items: 2,
